@@ -17,6 +17,8 @@
 		72E426101CB91DF300592B32 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E4260F1CB91DF300592B32 /* customCell.swift */; };
 		72E426131CB9229500592B32 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E426111CB9229500592B32 /* ContainerViewController.swift */; };
 		72E426141CB9229500592B32 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E426121CB9229500592B32 /* ContainerViewController.xib */; };
+		755F7B8F1CC64B9200E3160C /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755F7B8E1CC64B9200E3160C /* DropDownView.xib */; };
+		755F7B911CC64BA500E3160C /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755F7B901CC64BA500E3160C /* DropDownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		72E4260F1CB91DF300592B32 /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		72E426111CB9229500592B32 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		72E426121CB9229500592B32 /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		755F7B8E1CC64B9200E3160C /* DropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		755F7B901CC64BA500E3160C /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		722F87231CB91974003418A2 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				755F7B8D1CC64B7400E3160C /* DropDown */,
 				722F87241CB91974003418A2 /* AppDelegate.swift */,
 				72E426111CB9229500592B32 /* ContainerViewController.swift */,
 				72E426121CB9229500592B32 /* ContainerViewController.xib */,
@@ -132,6 +137,15 @@
 				722F87461CB91974003418A2 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		755F7B8D1CC64B7400E3160C /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				755F7B8E1CC64B9200E3160C /* DropDownView.xib */,
+				755F7B901CC64BA500E3160C /* DropDownView.swift */,
+			);
+			name = DropDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755F7B8F1CC64B9200E3160C /* DropDownView.xib in Resources */,
 				722F872F1CB91974003418A2 /* LaunchScreen.storyboard in Resources */,
 				722F872C1CB91974003418A2 /* Assets.xcassets in Resources */,
 				72E426141CB9229500592B32 /* ContainerViewController.xib in Resources */,
@@ -267,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				722F87271CB91974003418A2 /* ViewController.swift in Sources */,
+				755F7B911CC64BA500E3160C /* DropDownView.swift in Sources */,
 				722F87251CB91974003418A2 /* AppDelegate.swift in Sources */,
 				72E426131CB9229500592B32 /* ContainerViewController.swift in Sources */,
 				72E426101CB91DF300592B32 /* customCell.swift in Sources */,

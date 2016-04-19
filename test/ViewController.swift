@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CustomCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var arr:[String] = ["test1","test2","test3","test4","test5","test6"];
@@ -29,7 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! customCell
         cell.label.text = arr[indexPath.row]
-
+        cell.delegate = self;
+        cell.tableView = tableView;
         return cell
     }
     
@@ -38,6 +39,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arr.count
+    }
+    
+    func customCellDidSelectPrice(cell: AnyObject) {
+        
     }
    
     @IBAction func btnTap(sender: UIButton) {
